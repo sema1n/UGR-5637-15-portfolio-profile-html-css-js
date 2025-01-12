@@ -1,0 +1,586 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --primary: #03011c;
+  --secondery: #1c1847;
+  --accent: #0cb8c2;
+  --text: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  font-size: 1.3rem; 
+}
+
+body {
+  background: var(--primary);
+  font-family: Poppins, sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+img {
+  width: 100%;
+}
+/* utility classes */
+.container {
+  padding: 4rem 2rem;
+  color: var(--text);
+}
+.highlighted {
+  color: var(--accent);
+}
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 0.5rem 3rem;
+  border-radius: 5rem;
+  display: inline-block;
+  margin-top: 2rem;
+  border: 2px solid var(--accent);
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+/* Header style */
+.nav {
+  background-color: var(--secondery);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  width: 100%;
+}
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.nav-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  background-color: var(--secondery);
+  width: 100%;
+  left: -200%;
+  padding: 1rem;
+  transition: left 0.5s ease;
+}
+.nav-active {
+  left: 0;
+}
+.nav-item {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  position: relative;
+
+}
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(56, 56, 56);
+  margin-top: 0.5rem;
+}
+.nav-item:hover {
+  opacity: 1;
+}
+
+.nav-item-active::after {
+  background-color: var(--accent);
+  opacity: 1;
+}
+
+.toggler .line {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: var(--text);
+  margin: 5px;
+}
+
+/* Hero styles */
+.hero {
+display: flex;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+color: var(--text);
+}
+.hero-description {
+font-size: 1.5rem;
+color: var(--accent);
+}
+.hero-img {
+margin-top: 6rem;  
+width: 450px;  
+height: 450px; 
+border-radius: 50%;
+overflow: hidden;
+border: 4px solid var(--accent); 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hero-img img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease; 
+}
+
+.hero-img:hover {
+transform: scale(1.05); 
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.hero-info {
+text-align: center;
+padding-top: 3rem;
+}
+
+.title {
+font-size: 3rem;
+}
+
+.hero-description {
+opacity: 0.7;
+font-family:var(--accent);
+font-size: 1.5rem;
+font-weight: 200; 
+line-height: 1.5; 
+color:var(--text);
+text-align: left; 
+margin-bottom: 1.2rem; 
+}
+@media screen and (min-width: 700px) {
+.hero {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-info {
+  text-align: left;
+  padding-right: 3rem;
+}
+}
+.social-icons {
+display: flex;
+gap: 2rem;
+justify-content: left;
+margin-top: 1rem;
+}
+
+.social-icon {
+font-size: 2rem;
+color: var(--text);
+transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+color: var(--accent);
+}
+
+.social-icon i {
+width: 3rem;
+height: 3rem;
+display: flex;
+justify-content:right;
+align-items:right;
+}
+/* About style */
+.about-media {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;            
+  margin-bottom: 30px;   
+}
+
+.about-media video {
+  width: 100%;            
+  max-width: 300px;       
+  height: auto;          
+  border-radius: 8px;    
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.about {
+ color: var(--text);
+}
+.about-info {
+  padding-top: 2rem;
+}
+
+.description {
+text-align: center justify;
+opacity: 0.7;
+font-size: 0.8rem;
+margin-bottom: 1rem;
+line-height: 1.5;
+}
+
+
+
+.secondery-title {
+  display: inline-block;
+  margin-bottom: 2rem;
+}  
+.secondery-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent);
+}
+/* CV styles */
+.CV-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Makes sure the grid is responsive */
+  gap: 20px; /* Adds spacing between grid items */
+  margin-top: 70px; /* Adds space between the header and the grid */
+}
+.CV-item {
+  background: var(--secondery);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.CV-item i {
+  font-size: 4rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+/* Projects styles */
+.projects-header {
+  text-align: left; /* Centers the title */
+  padding-bottom: 2rem; /* Adds space below the header */
+}
+
+.projects-tab {
+  display: flex; /* Aligns the buttons horizontally in a row */
+  justify-content: flex-start; /* Aligns buttons to the left */
+  gap: 0.5rem; /* Adds space between buttons */
+  margin-bottom: 2rem; /* Adds some space below the buttons */
+}
+
+.projects-tab-btn {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--text);
+  padding: 0.3rem 1.5rem;
+  border-radius: 5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.projects-tab-btn-active {
+  background-color: var(--accent);
+}
+
+/* Add space between the buttons and the images */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Makes sure images are large enough */
+  gap: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  justify-items: start; /* Aligns images to the left within the grid cells */
+  margin-left: 0; /* Removes any margin on the left side */
+  text-align: left; /* Ensures any text inside grid items is left-aligned */
+}
+
+/* Making images larger and aligned to the left */
+.projects-item {
+  text-align: left; /* Left-align text inside the grid item */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content inside the item to the left */
+}
+
+/* Setting images to align properly */
+.projects-item img {
+  border-radius: 20px;
+  max-width: 180px; /* Larger size for the images */
+  height: auto;
+  display: block; /* Makes image a block element */
+}
+
+/* contact styles */
+.contact-info-item {
+  display: flex;
+}
+
+.contact-info-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  background: var(--secondery);
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.footer {
+  color: var(--text);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Desktop Design */
+@media screen and (min-width: 700px) {
+  .container {
+    padding: 4rem 6rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  /* grid */
+  .grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .grid-item {
+    width: 30%;
+  }
+
+  /* nav */
+  .nav {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toggler {
+    display: none;
+  }
+
+  .nav-links {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    width: auto;
+  }
+
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+
+  .nav-item::after {
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    background: none;
+  }
+
+  .nav-item-active {
+    opacity: 1;
+  }
+
+  .nav-item-active::after {
+    background: var(--accent);
+  }
+
+  /* hero */
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-info {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  /* About */
+  .about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-img {
+    width: 40%;
+  }
+
+  .about-info {
+    width: 55%;
+  }
+  .description {
+    text-align: justify;
+    line-height: 1.3; 
+    margin-bottom: 20px; 
+  }
+
+  /* contact */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    padding: px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+}
+/* Style for the project image container */
+.projects-item {
+position: calc(container);
+margin-bottom: 1rem;
+}
+.projects-item img {
+border-radius: 10px;
+width: 100%;
+height: auto;
+transition: transform 0.3s ease;
+}
+
+.projects-item:hover img {
+transform: scale(1.1);  
+}
+footer {
+  background-color:var(--secondery) ;
+  text-align: center;
+  padding: 10px;
+  color:var(--secondery);
+}
+
+
+/* Mobile Landscape (>= 480px width) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Adjustments for mobile landscape orientation */
+  .hero {
+    flex-direction: row; /* Stack elements horizontally */
+  }
+  .title {
+    font-size: 2.5rem; /* Adjust title size */
+  }
+  .nav-links {
+    flex-direction: row;
+  }
+}
+
+/* Tablet Portrait (>= 768px width) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjustments for tablet portrait orientation */
+  .hero {
+    flex-direction: row;
+  }
+  .nav-links {
+    padding: 0;
+    flex-direction: row;
+  }
+  .container {
+    padding: 4rem 3rem;
+  }
+}
+
+/* Tablet Landscape (>= 1024px width) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  /* Adjustments for tablet landscape orientation */
+  .hero {
+    flex-direction: row;
+  }
+  .container {
+    padding: 5rem 4rem;
+  }
+}
+
+/* Desktop/Laptop (>= 1280px width) */
+@media screen and (min-width: 1280px) {
+  /* Desktop and laptop view adjustments */
+  .hero {
+    flex-direction: row;
+  }
+  .grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .nav {
+    padding: 1rem 6rem;
+  }
+}
