@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Semawit Portfolio</title>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar" aria-label="Main Navigation"></nav>
-        <span class="highlighted">Semawit Portfolio</span>
-        <div class="nav-links">
-          <a href="home.html" class="nav-item">Home</a>
-          <a href="about.html" class="nav-item">About</a>
-          <a href="cv.html" class="nav-item">CV</a>
-          <a href="projects.html" class="nav-item">Projects</a>
-          <a href="contact.html" class="nav-item nav-item-active">Contact</a>
-        </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Semawit Nega</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <section class="container contact" id="contact">
-      <h2 class="secondery-title">Contact</h2>
-      <div class="contact-info">
-        <div class="contact-info-item">
-          <h3>Address</h3>
-          <p>CMC Summit Safari</p>
-        </div>
-        <div class="contact-info-item">
-          <h3>Email</h3>
-          <p>semawitnega04@gmail.com</p>
-        </div>
-        <div class="contact-info-item">
-          <h3>Phone</h3>
-          <p>+251945959410</p>
-        </div>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo"><span class="highlighted">Semawit</span> Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html#home" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="cv.html" class="nav-item nav-item-active">CV</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
       </div>
+    </nav>
+  </header>
 
-      <div class="contact-form">
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
-          <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-          <button class="btn submit-btn">Send Message</button>
-        </form>
+  <main>
+    <h1>CV</h1>
+    <section class="CV container" id="Cv">
+      <div class="CV-header">
+          <h2 class="secondery-title">CV</h2>
+      </div>
+      <div class="grid CV-grid">
+        <div class="grid-item CV-item">
+          <img src="images/website dsign.png" alt="Website Design Icon" style="width: 80%; max-width: 150px;" />
+          <h3>Website Design</h3>
+          <p class="description">
+            Creative and detail-oriented Web Designer in crafting visually appealing, user-friendly, 
+            and responsive websites. I will start my work from designing wireframe and site diagram then proceed to the coding part.
+            Before going to the development part, I make documents to help me for the implementation like proposal SRS SDS then proceed to 
+            the coding part.
+          </p>
+        </div>
+        <div class="grid-item CV-item">
+          <img src="images/data analytics.png" alt="Data Analytics Icon" style="width: 80%; max-width: 150px;" />
+          <h3>Data Analytics</h3>
+          <p class="description">
+            I have learnt data analysis on Udacity. It basically focuses on databases like MySQL. These include the systematic collection 
+            of data, rigorous cleaning and validation of datasets, and the application of appropriate statistical methods to interpret 
+            the data. I have learnt database in second year also. I got certification on Fundamentals of Data Analysis on Udacity.
+          </p>
+          <button class="btn" onclick="openCertificate('dataAnalytics')">View Certificate</button>
+        </div>
+        <div class="grid-item CV-item">
+          <img src="images/programming language.png" alt="Programming Language Icon" style="width: 80%; max-width: 150px;" />
+          <h3>Programming Language</h3>
+          <p class="description">
+            I have learnt some programming languages like Java, Python, HTML, CSS, MySQL, and JavaScript. I have learnt these languages from 
+            campus and Udacity. I have a certificate from Udacity in JavaScript, HTML, and CSS as Fundamentals of Programming Languages. I learnt
+            Python under a computer programming course and Java under OOP and DSA courses. I have a little bit of experience in full-stack development while building this personal portfolio 
+            and a hotel management system for Ebenezer Guest House.
+          </p>
+          <button class="btn" onclick="openCertificate('programmingLanguages')">View Certificate</button>
+        </div>
       </div>
     </section>
+  </main>
 
-    <footer class="footer">
-      <p>&copy; 2024 Semawit Nega All Rights Reserved</p>
-    </footer>
-  </body>
+  <script src="scripts.js"></script>
+</body>
 </html>
-
