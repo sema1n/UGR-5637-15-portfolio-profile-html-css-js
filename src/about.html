@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Semawit Portfolio</title>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar" aria-label="Main Navigation"></nav>
-        <span class="highlighted">Semawit Portfolio</span>
-        <div class="nav-links">
-          <a href="home.html" class="nav-item">Home</a>
-          <a href="about.html" class="nav-item nav-item-active">About</a>
-          <a href="cv.html" class="nav-item">CV</a>
-          <a href="projects.html" class="nav-item">Projects</a>
-          <a href="contact.html" class="nav-item">Contact</a>
-        </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo"><span class="highlighted">Semawit</span> Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html#home" class="nav-item">Home</a> <!-- Scrolls to hero section -->
+        <a href="about.html" class="nav-item nav-item-active">About</a>
+        <a href="cv.html" class="nav-item">CV</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>About Me</h1>
 
-    <section class="about container" id="about">
-      <div class="about-media">
-        <video controls width="600" height="400">
-          <source src="video/aboutvideo.mp4" type="video/mp4">
-          Your browser does not support the video element.
-        </video>
-      </div>
-      <div class="about-info">
-        <h2 class="secondery-title">About Me</h2>
-        <p class="description">
-            Hello, I am a Software Engineering student in Addis Ababa University, AAiT. I am third year Software Engineering student and 
-            working hard to graduate with a good GPA and skill. I have done simple projects while I was second year for Data structure and 
-            algorithm, object oriented programming and Database courses. For Data structure and algorithm and object oriented programming 
-            I made a simple calander which has a graphical user interface using java programming language. For Database course i have 
-            made a simple shool managemnt system for minilik secondary school using my SQL just to store informations nothing more. 
-            Now for this year, I am working on hotel management system for Ebenezer guest house, for fundamentals
-            of software engineering course project which has full stack a backend and a front end.
-        </p>
-        <p class="description">
-            I really love countryside life a lot. I am a dynamic individual whose life is defined by a rich tapestry of interests, hobbies, 
-            and adventures that reflect my curiosity, passion for growth, and love for new experiences. One of my greatest interests 
-            lies in the world of literature. I enjoy delving into a wide range of genres, from historical 
-            fiction to contemporary novels. Books offer me an opportunity to explore different perspectives, cultures, and ideas, 
-            enriching my understanding of the world. Outside of reading, I have a deep love for travel. I see travel as a way to truly 
-            understand different cultures. For me, every trip is an adventure — an opportunity to learn, connect with new people, and 
-            experience life in ways that cannot be replicated by simply reading about it. Even though i have not traveled that much
-           ,My travels have taken me from the Tis Abay, Tana in Bahir Dar to Fasil Genb in Gondar. i have traveled to bahir dar and Gondar
-            quite a few times and it was an amazing experinces. Each journey has left a lasting impact on my personal growth. 
-          </p>
-          <p class="description">
-            My hobbies also include photography, a passion I picked up during my travels. Capturing moments in time, 
-            whether it’s a stunning landscape or an intimate street scene, allows me to preserve memories and share my perspective 
-            with others. Photography has also taught me patience and the art of paying attention to detail. I am a coffee person. The 
-            love i have for coffee is not compared to anything. Just to mention from thing i love; I am a dog person, I love watching 
-            cooking shows, house renovation shows, and as aways food, coffee and sleep are on the top of my list. In conclusion, my
-            interests, hobbies, and adventures are a reflection of my diverse passions and a commitment to living a fulfilling life. 
-            From my love of literature to my photography, travel, and mindfulness practices, I embrace every
-            opportunity to learn, explore, and grow.
-        <a href="#" class="btn btn-secondery">More</a>
-      </div>
-    </section>
-  </body>
+  <section class="about container" id="about">
+    <div class="about-media">
+      <video controls width="100%">
+        <source src="video/about video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+    <div class="about-info">
+      <h2 class="secondery-title">About Me</h2>
+      <p class="description">
+        Hello, I am a Software Engineering student in Addis Ababa University, AAiT. I am third year Software Engineering student and 
+        working hard to graduate with a good GPA and skill. I have done simple projects while I was second year for Data structure and 
+        algorithm, object oriented programming and Database courses. For Data structure and algorithm and object oriented programming 
+        I made a simple calander which has a graphical user interface using java programming language. For Database course i have 
+        made a simple shool managemnt system for minilik secondary school using my SQL just to store informations nothing more. 
+        Now for this year, I am working on hotel management system for Ebenezer guest house, for fundamentals
+        of software engineering course project which has full stack a backend and a front end.
+      </p>
+  
+      <p class="description">
+        I really love countryside life a lot. I am a dynamic individual whose life is defined by a rich tapestry of interests, hobbies, 
+        and adventures that reflect my curiosity, passion for growth, and love for new experiences. One of my greatest interests 
+        lies in the world of literature. I enjoy delving into a wide range of genres, from historical 
+        fiction to contemporary novels. Books offer me an opportunity to explore different perspectives, cultures, and ideas, 
+        enriching my understanding of the world. Outside of reading, I have a deep love for travel. I see travel as a way to truly 
+        understand different cultures. For me, every trip is an adventure — an opportunity to learn, connect with new people, and 
+        experience life in ways that cannot be replicated by simply reading about it. Even though i have not traveled that much
+       ,My travels have taken me from the Tis Abay, Tana in Bahir Dar to Fasil Genb in Gondar. i have traveled to bahir dar and Gondar
+        quite a few times and it was an amazing experinces. Each journey has left a lasting impact on my personal growth. 
+      </p>
+  
+      <p class="description">
+        My hobbies also include photography, a passion I picked up during my travels. Capturing moments in time, 
+        whether it’s a stunning landscape or an intimate street scene, allows me to preserve memories and share my perspective 
+        with others. Photography has also taught me patience and the art of paying attention to detail. I am a coffee person. The 
+        love i have for coffee is not compared to anything. Just to mention from thing i love; I am a dog person, I love watching 
+        cooking shows, house renovation shows, and as aways food, coffee and sleep are on the top of my list. In conclusion, my
+        interests, hobbies, and adventures are a reflection of my diverse passions and a commitment to living a fulfilling life. 
+        From my love of literature to my photography, travel, and mindfulness practices, I embrace every
+        opportunity to learn, explore, and grow.
+      </p>
+  
+      <a href="#" class="btn btn-secondary custom-btn">View More</a>
+    </div>
+  </section>
+  <script src="scripts.js"></script>
+</body>
 </html>
-
