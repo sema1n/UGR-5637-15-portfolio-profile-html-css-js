@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV - Semawit Nega</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <header>
-    <nav class="nav">
-      <a href="index.html" class="logo"><span class="highlighted">Semawit</span> Portfolio</a>
-      <div class="nav-links">
-        <a href="index.html#home" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About</a>
-        <a href="cv.html" class="nav-item nav-item-active">CV</a>
-        <a href="projects.html" class="nav-item">Projects</a>
-        <a href="contact.html" class="nav-item">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <h1>CV</h1>
-    <section class="CV container" id="Cv">
-      <div class="CV-header">
-          <h2 class="secondery-title">CV</h2>
-      </div>
-      <div class="grid CV-grid">
-        <div class="grid-item CV-item">
-          <img src="images/website dsign.png" alt="Website Design Icon" style="width: 80%; max-width: 150px;" />
-          <h3>Website Design</h3>
-          <p class="description">
-            Creative and detail-oriented Web Designer in crafting visually appealing, user-friendly, 
-            and responsive websites. I will start my work from designing wireframe and site diagram then proceed to the coding part.
-            Before going to the development part, I make documents to help me for the implementation like proposal SRS SDS then proceed to 
-            the coding part.
-          </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Semawit Nega Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="logo"><span class="highlighted">Semawit </span>Portfolio</a>
+        <div class="nav-links">
+          <a href="index.html#home" class="nav-item">Home</a>
+          <a href="about.html" class="nav-item">About</a>
+          <a href="cv.html" class="nav-item">CV</a>
+          <a href="projects.html" class="nav-item">Projects</a>
+          <a href="contact.html" class="nav-item nav-item-active">Contact</a>
         </div>
-        <div class="grid-item CV-item">
-          <img src="images/data analytics.png" alt="Data Analytics Icon" style="width: 80%; max-width: 150px;" />
-          <h3>Data Analytics</h3>
-          <p class="description">
-            I have learnt data analysis on Udacity. It basically focuses on databases like MySQL. These include the systematic collection 
-            of data, rigorous cleaning and validation of datasets, and the application of appropriate statistical methods to interpret 
-            the data. I have learnt database in second year also. I got certification on Fundamentals of Data Analysis on Udacity.
-          </p>
-          <button class="btn" onclick="openCertificate('dataAnalytics')">View Certificate</button>
-        </div>
-        <div class="grid-item CV-item">
-          <img src="images/programming language.png" alt="Programming Language Icon" style="width: 80%; max-width: 150px;" />
-          <h3>Programming Language</h3>
-          <p class="description">
-            I have learnt some programming languages like Java, Python, HTML, CSS, MySQL, and JavaScript. I have learnt these languages from 
-            campus and Udacity. I have a certificate from Udacity in JavaScript, HTML, and CSS as Fundamentals of Programming Languages. I learnt
-            Python under a computer programming course and Java under OOP and DSA courses. I have a little bit of experience in full-stack development while building this personal portfolio 
-            and a hotel management system for Ebenezer Guest House.
-          </p>
-          <button class="btn" onclick="openCertificate('programmingLanguages')">View Certificate</button>
-        </div>
-      </div>
-    </section>
-  </main>
+      </nav>
+    </header>
 
-  <script src="scripts.js"></script>
-</body>
+    <main>
+      <h1>Contact Me</h1>
+
+      <section class="container contact" id="contact">
+        <div class="contact-info">
+          <h2 class="secondery-title">Contact</h2>
+          <div class="info-container">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <img src="images/location.png" alt="location Icon" style="width: 60%; max-width: 100px;" />
+              </div>
+              <div class="contact-info-data">
+                <h3>Address</h3>
+                <p>CMC Summit Safari</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <img src="images/email.png" alt="email Icon" style="width: 60%; max-width: 100px;" />
+              </div>
+              <div class="contact-info-data">
+                <h3>Email</h3>
+                <p>semawitnega04@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <img src="images/phone.png" alt="phone Icon" style="width: 80%; max-width: 150px;" />
+              </div>
+              <div class="contact-info-data">
+                <h3>Phone</h3>
+                <p>+251945959410</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10" placeholder="Write your message"></textarea>
+
+          <button class="btn submit-btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Semawit Nega All Right Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
