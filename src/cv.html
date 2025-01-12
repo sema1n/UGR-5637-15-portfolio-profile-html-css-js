@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Semawit Portfolio</title>
-  </head>
-  <body>
-    <header>
-        <nav class="navbar" aria-label="Main Navigation"></nav>
-        <span class="highlighted">Semawit Portfolio</span>
-        <div class="nav-links">
-          <a href="home.html" class="nav-item">Home</a>
-          <a href="about.html" class="nav-item">About</a>
-          <a href="cv.html" class="nav-item nav-item-active">CV</a>
-          <a href="projects.html" class="nav-item">Projects</a>
-          <a href="contact.html" class="nav-item">Contact</a>
-        </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Semawit Nega</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo"><span class="highlighted">Semawit</span> Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html#home" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="cv.html" class="nav-item nav-item-active">CV</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>CV</h1>
     <section class="CV container" id="Cv">
-      <h2 class="secondery-title">CV</h2>
+      <div class="CV-header">
+          <h2 class="secondery-title">CV</h2>
+      </div>
       <div class="grid CV-grid">
         <div class="grid-item CV-item">
-          <i class="fa-solid fa-computer"></i>
+          <img src="images/website dsign.png" alt="Website Design Icon" style="width: 80%; max-width: 150px;" />
           <h3>Website Design</h3>
           <p class="description">
             Creative and detail-oriented Web Designer in crafting visually appealing, user-friendly, 
-          and responsive websites. I will start my work from designing wireframe and sitediagram then proceed to the coding part.
-          Before going to the development part i make documents to help me for the implementation like propsal SRS SDS then proceed to 
-          the coding part.
+            and responsive websites. I will start my work from designing wireframe and site diagram then proceed to the coding part.
+            Before going to the development part, I make documents to help me for the implementation like proposal SRS SDS then proceed to 
+            the coding part.
+          </p>
         </div>
         <div class="grid-item CV-item">
-          <i class="fa-solid fa-meteor"></i>
+          <img src="images/data analytics.png" alt="Data Analytics Icon" style="width: 80%; max-width: 150px;" />
           <h3>Data Analytics</h3>
           <p class="description">
-            I have learnt data analysis on udacty. It basically focuses on database like My SQL.These include the systematic collection 
+            I have learnt data analysis on Udacity. It basically focuses on databases like MySQL. These include the systematic collection 
             of data, rigorous cleaning and validation of datasets, and the application of appropriate statistical methods to interpret 
-            the data. I have learnt database in second year also. i got certification on Fundamentals of Data analysis on udacity.
+            the data. I have learnt database in second year also. I got certification on Fundamentals of Data Analysis on Udacity.
+          </p>
+          <button class="btn" onclick="openCertificate('dataAnalytics')">View Certificate</button>
         </div>
         <div class="grid-item CV-item">
-          <i class="fa-solid fa-pen-nib"></i>
-          <h3>Programming Languages</h3>
+          <img src="images/programming language.png" alt="Programming Language Icon" style="width: 80%; max-width: 150px;" />
+          <h3>Programming Language</h3>
           <p class="description">
-            I have learnt some programming Languages like Java, Python, HTML, CSS, my SQL and javascript. I have learnt this languges from 
-          campus and Udacity. I have certificate from udacity in Javascript, HTML, CSS as Fundamentals of programming Languages. I learnt
-          python under computer programming course and java under OOP and DSA courses.I have alittle bit of experience in fullstack development while buliding this personal portfolio 
-          and a hotel management system for Ebenezer Guest house.
+            I have learnt some programming languages like Java, Python, HTML, CSS, MySQL, and JavaScript. I have learnt these languages from 
+            campus and Udacity. I have a certificate from Udacity in JavaScript, HTML, and CSS as Fundamentals of Programming Languages. I learnt
+            Python under a computer programming course and Java under OOP and DSA courses. I have a little bit of experience in full-stack development while building this personal portfolio 
+            and a hotel management system for Ebenezer Guest House.
+          </p>
+          <button class="btn" onclick="openCertificate('programmingLanguages')">View Certificate</button>
         </div>
       </div>
     </section>
-  </body>
-</html>
+  </main>
 
+  <script src="scripts.js"></script>
+</body>
+</html>
