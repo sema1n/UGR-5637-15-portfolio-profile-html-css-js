@@ -1,57 +1,68 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Semawit Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Semawit Nega Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar" aria-label="Main Navigation"></nav>
-      <span class="highlighted">Semawit Portfolio</span>
+      <nav class="nav">
+        <a href="index.html" class="logo"><span class="highlighted">Semawit </span>Portfolio</a>
         <div class="nav-links">
-          <a href="home.html" class="nav-item">Home</a>
-          <a href="about.html" class="nav-item">About</a>
-          <a href="cv.html" class="nav-item">CV</a>
+          <a href="index.html#home" class="nav-item">Home</a>
+          <a href="index.html#about" class="nav-item">About</a>
+          <a href="index.html#Cv" class="nav-item">CV</a>
           <a href="projects.html" class="nav-item nav-item-active">Projects</a>
-          <a href="contact.html" class="nav-item">Contact</a>
+          <a href="index.html#contact" class="nav-item">Contact</a>
         </div>
+      </nav>
     </header>
+    <main>
+    <h1>Projects</h1>
 
-    <section class="projects container" id="projects">
-      <h2 class="secondery-title">Projects</h2>
-      <div class="projects-tab">
-        <button class="projects-tab-btn projects-tab-btn-active" id="all">All</button>
-        <button class="projects-tab-btn" id="design">Design</button>
-        <button class="projects-tab-btn" id="web">Web</button>
-        <button class="projects-tab-btn" id="gui">GUI</button>
-      </div>
+      <section class="projects container" id="projects">
+        <div class="projects-header">
+          <h2 class="secondery-title">Projects</h2>
+      
+          <div class="projects-tab">
+            <button class="projects-tab-btn projects-tab-btn-active" id="all">
+              All
+            </button>
+            <button class="projects-tab-btn" id="design">Design</button>
+            <button class="projects-tab-btn" id="web">WEB</button>
+            <button class="projects-tab-btn" id="gui">GUI</button>
+          </div>
+        </div>
+      
+    
+        <div class="projects-images">
+          <div class="grid projects-grid">
+            <div class="grid-item projects-item all design">
+              <img src="images/project-1.jpg" alt="" />
+            </div>
+            <div class="grid-item projects-item all design">
+              <img src="images/project-2.jpg" alt="" />
+            </div>
+            <div class="grid-item projects-item all web">
+              <img src="images/project-3.png" alt="" />
+            </div>
+            <div class="grid-item projects-item all web">
+              <img src="images/project-4.png" alt="" />
+            </div>
+            <div class="grid-item projects-item all web">
+              <img src="images/project-5.png" alt="" />
+            </div>
+            <div class="grid-item projects-item all gui">
+              <img src="images/project-6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
-      <div class="grid projects-grid">
-        <div class="grid-item projects-item all design">
-          <img src="images/project-1.jpg" alt="Project 1" width="400" height="250">
-        </div>
-        <div class="grid-item projects-item all design">
-          <img src="images/project-2.jpg" alt="Project 2" width="400" height="250">
-        </div>
-        <div class="grid-item projects-item all web">
-          <img src="images/project-3.png" alt="Project 3" width="400" height="250">
-        </div>
-        <div class="grid-item projects-item all web">
-          <img src="images/project-4.png" alt="Project 4" width="400" height="250">
-        </div>
-        <div class="grid-item projects-item all web">
-          <img src="images/project-5.png" alt="Project 5" width="400" height="250">
-        </div>
-        <div class="grid-item projects-item all gui">
-          <img src="images/project-6.png" alt="Project 6" width="400" height="250">
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>&copy; 2024 Semawit Nega All Rights Reserved</p>
-    </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
-
