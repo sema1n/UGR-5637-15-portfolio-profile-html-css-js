@@ -1,17 +1,13 @@
-
 const toggler = document.querySelector(".toggler");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-item");
 const projectsTabBtns = document.querySelectorAll(".projects-tab-btn");
 const projectsItems = document.querySelectorAll(".projects-item");
+
 // show and hide navbar in mobile
- if (toggler) {
-    toggler.addEventListener("click", () => {
-      navLinks.classList.toggle("nav-active");
-    });
-  } else {
-    console.error("The toggler element does not exist in the DOM.");
-  }
+toggler.addEventListener("click", () => {
+    navLinks.classList.toggle("nav-active");
+  });
 // add active class on click to nav-items
 navItems.forEach((item) => {
     item.addEventListener("click", function () {
