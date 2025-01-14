@@ -5,9 +5,11 @@ const projectsTabBtns = document.querySelectorAll(".projects-tab-btn");
 const projectsItems = document.querySelectorAll(".projects-item");
 
 // show and hide navbar in mobile
-toggler.addEventListener("click", () => {
-    navLinks.classList.toggle("nav-active");
-  });
+ if (toggler) {
+    toggler.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-active");
+    });
+  }
 // add active class on click to nav-items
 navItems.forEach((item) => {
     item.addEventListener("click", function () {
