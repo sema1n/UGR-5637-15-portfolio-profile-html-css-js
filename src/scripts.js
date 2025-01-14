@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const toggler = document.querySelector(".toggler");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-item");
@@ -9,6 +10,8 @@ const projectsItems = document.querySelectorAll(".projects-item");
     toggler.addEventListener("click", () => {
       navLinks.classList.toggle("nav-active");
     });
+  } else {
+    console.error("The toggler element does not exist in the DOM.");
   }
 // add active class on click to nav-items
 navItems.forEach((item) => {
