@@ -1,10 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
+   const menuIcon = document.getElementById("menu_icon");
+  const navMenu = document.getElementById("nav-menu");
 const toggler = document.querySelector(".toggler");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-item");
 const projectsTabBtns = document.querySelectorAll(".projects-tab-btn");
 const projectsItems = document.querySelectorAll(".projects-item");
 
+  menuIcon.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+});
 // show and hide navbar in mobile
  if (toggler) {
     toggler.addEventListener("click", () => {
